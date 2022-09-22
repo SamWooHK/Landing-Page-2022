@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta html lang="en">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="Description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/aa0c1be9e3.js" crossorigin="anonymous"></script>
+        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" type="text/css" href="flag-icons-main/css/flag-icons.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+        <title>I am Sam Woo</title>
+    </head>
+
+    <body>
+        <div class="toTop" onclick=clicktoTop()><i class='bx bx-arrow-to-top'></i></div>
+        <section class="intro">
+            <div class="cover">
+                <div class="writer">
+                    <h1>Hello! I am Sam.</h1>
+                    <div class="blinkCursor typetxt" id="typeWriter"></div>
+                </>
+                <img src="images/selfpic.JPG">
+            </div>
+                <button class="start" onclick=knowMe()>Know Me</button>
+            </div>
+        </section>
+        <section class="content skills">
+            <h1>Skills</h1>
+            <div>
+                <h2>Languages</h2>
+                <div class="lang">
+                    <div><span class="fi fi-gb"></span>English<span class="langLv" style="--lvl:4;--bg:yellow">TOEIC score of 945</span></div>
+                    <div><span class="fi fi-cn"></span>Chinese<span class="langLv" style="--lvl:4;--bg:yellow">business</span></div>
+                    <div><span class="fi fi-hk"></span>Cantonese<span class="langLv" style="--lvl:5;--bg:yellow">native</span></div>
+                    <div><span class="fi fi-jp"></span>Japanese<span class="langLv" style="--lvl:4;--bg:yellow">JLPT N1</span></div>
+                </div>
+                
+            </div>
+            <div>
+                <h2>Programming languages and frameworks</h2>
+                <ul>
+                    <li><i class='bx bx-lg bxl-html5'></i></li>
+                    <li><i class='bx bx-lg bxl-css3'></i></li>
+                    <li><i class='bx bx-lg bxl-javascript' ></i></li>
+                    <li><i class='bx bx-lg bxl-react'></i></li>
+                    <li><i class='bx bx-lg bxl-python' ></i></li>
+                    <li><i class='bx bx-lg bxl-flask' ></i></li>
+                    <li><i class='bx bx-lg bxl-django' ></i></li>
+                </ul>
+            </div>
+
+        </section>
+        <section class="content experience">
+            <h1>Experience</h1>
+            <dl>
+                <dt>Higashi-Shinjuku Hotel Operations<small>2017-</small></dt>
+                <dd>Front Desk</dd>
+                <ul>
+                <li>Assisted in daily hotel operations, including check-in, check-out, reservations, customer service, daily report processing etc.</li>
+                <li>Gathering sight-seeing and event information for guests</li>
+                <li>Scheduled duty list</li>
+                </ul>
+
+                <dt>Brand off Limited<small>2015-2017</small></dt>
+                <dd>Sales</dd>
+                <ul>
+                    <li>Promoted and sold recycled name brand products, used multi-language corresponding to different customers</li>
+                    <li>Assisted in daily operations, including daily report processing, inventory counts etc.</li>
+                    <li>Opened and closed the store</li>
+                </ul>
+
+            </dl>
+        </section>
+        <section class="content education">
+            <h1>Education</h1>
+            <dl>
+                <dt>09/2012-07/2015</dt>
+                <dd>City University of Hong Kong <span>BBA (Hons) in International Business (Japan Studies)</span></dd>
+                
+                <dt>09/2011-07/2012</dt>
+                <dd>HKU SPACE Community College</dd>
+                
+                <dt>09/2004-07/2011</dt>
+                <dd>SKH Tang Shiu Kin Secondary School (F.1-F.7)</dd>                
+            </dl>
+        </section>
+        <section class=" content interest">
+            <h1>Interest</h1>
+            <div class="interest-grid">
+                <div id="interest-grid-item" style="--bg:#ffb3b3;--img:url('images/movie.jpg');">Movie</div>
+                <div id="interest-grid-item" style="--bg:#80ffff;--img:url('images/anime.jpg');">Anime</div>
+                <div id="interest-grid-item" style="--bg:#bfff80;--img:url('images/coding.jpg');">Coding</div>
+                <div id="interest-grid-item" style="--bg:#ffffb3;--img:url('images/travel.jpg');">Travel</div>
+            </div>
+        </section>
+        <section class="content contact">
+            <h1>Contact</h1>
+            <div class="container">
+            <form class="contact-form" id="my-form" name="my-form" action="">
+
+                <label for="name">Name</label>
+                <input type="text" placeholder="Name" name ="name" id="name" required/>
+
+
+                <label for="email">Email</label>
+                <input type="email" placeholder="Email" name="email" id="email" required/>
+
+                <label for="msg">Messages</label>
+                <textarea type="text" placeholder="Your messages" id="mailcontent" name="mailcontent" required></textarea>
+
+                <button id="formbtn" type="submit">Send</button>
+               
+            </form>
+            <div class="other-contact">
+                <ul>
+                    <li><a href="https://www.facebook.com/woochisum" target="_blank"><i class='bx bxl-facebook-circle'></i>woochisum</a></li>
+                    <li><a href="https://github.com/SamWooHK" target="_blank"><i class='bx bxl-github' ></i>SamWooHK</a></li>
+                    <li><a href="http://www.samwcs.com/" target="_blank"><i class='bx bxl-wordpress' ></i>My Blog</a></li>
+                    <!-- <li><i class='bx bx-envelope' ></i></li> -->
+                    <li><a href="https://www.linkedin.com/in/chi-sum-woo-57705a251/" target="_blank"><i class='bx bxl-linkedin-square'></i>woochisum</a></li>
+                </ul>
+            </div>
+            </div>
+            
+        </section>
+
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+        <script src="selfintro.js" async defer></script>
+    </body>
+</html>
