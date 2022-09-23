@@ -19,6 +19,17 @@ body
 a{
     text-decoration: none;
 }
+.intro
+{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    background: url(images/cover.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
 .skills
 {
     background: url(images/skills.jpg);
@@ -69,19 +80,7 @@ section
     background: linear-gradient(270deg, rgba(5,217,242,1),rgba(5,217,242,0.5),rgba(5,217,242,0.2));
     overflow: hidden;
 }
-.intro
-{
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    background: url(images/cover.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    gap: 5em;
-}
+
 .cover
 {
     display: flex;
@@ -160,26 +159,27 @@ section
 .content
 {
     width: 100%;
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
+    align-items: center;
     padding: 20px;
     gap: 3em;
 }
 
 .content h1
 {
-    align-self: center;
     font-size: 5em;
     text-transform: uppercase;
+    text-align: center;
     color: rgba(5,217,242,1);
 }
 .content h2
 {
-    align-self: center;
+    display: relative;
     font-size: 2.5rem;
     text-transform: uppercase;
     text-decoration: underline;
+    text-align: center;
 }
 
 /* skills */
@@ -218,7 +218,6 @@ section
 {
     position: fixed;
     width: calc((var(--lvl)/5)*300%);
-    font-size: 1rem;
     background: var(--bg);
     font-size: 2rem;
     left: 200px;
@@ -424,4 +423,167 @@ section
 {
     background: rgba(255, 255, 255,1);
     color: black;
+}
+
+@media only screen and (max-width: 420px){
+    .content h1
+    {
+        font-size: 3rem;
+    }
+    .content h2
+    {
+        font-size: 1.3rem;
+    }
+    /* cover */
+    .writer h1
+    {
+        left: 5%;
+        font-size: 2rem;
+    }
+    .typetxt
+    {
+        left: 12%;
+        bottom: 100px;
+        font-size: 1.8rem;
+        font-weight: 2.5em;
+    }
+    .cover img
+    {
+        width: 80%;
+        height: 80%;
+        left: 110%;
+    }
+    .start
+    {
+        top:40px;
+    }
+
+    /* skills */
+    .skills .lang
+    {
+        font-size: 1em;
+        transform: translateX(-80%);
+        margin-top: 40px;
+    }
+    .lang div
+    {
+        width: 20%;
+        height: 2em;
+        font-size: 2rem;
+    }
+    .langLv
+    {
+        margin-top: 10px;
+        width: calc((var(--lvl)/5)*120%);
+        font-size: 1rem;
+        left: 200px;
+        padding-left: calc((var(--lvl)/5)*20%);
+    }
+
+    /* experience */
+    .experience dt
+    {
+        width: 100%;
+        font-size: 1em;
+    }
+    .experience dd
+    {
+        font-size: 1.2rem;
+    }
+    .experience ul
+    {
+        font-size: 1.2rem;
+    }
+
+    /* education */
+    .education dt
+    {
+        font-size: 1rem;
+    }
+    .education dd
+    {
+        font-size: 0.8rem;
+    }
+
+
+    /* interest */
+    .interest-grid
+    {
+        grid-template-columns: 1fr;
+        padding: 5px;
+    }
+
+    #interest-grid-item
+    {
+        height:200px;
+    }
+    #interest-grid-item:hover
+    {
+        background-image: var(--img);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: var(--bg);
+    }
+
+    /* contact */
+    .contact .container
+    {
+        flex-direction: column;
+    }
+    .contact-form
+    {
+        width: 100%;
+    }
+    .contact-form input
+    {
+        outline: none;
+        border: none;
+        width: 100%;
+    }
+    .contact-form textarea
+    {
+        outline: none;
+        border: none;
+        width: 100%;
+        resize: none;
+        width: 100%;
+        height: 250px;
+    }
+    .contact-form button
+    {
+        border: none;
+        border-radius: 5px;
+        width: 50px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        align-self: center;
+        background-color: #fff;
+        transition: 0.5s;
+    }
+    .contact-form button:hover
+    {
+        border: 2px solid #fff;
+        background-color: transparent;
+    }
+    .other-contact
+    {
+        width: 100%;
+        font-size: 0px;
+    }
+    .other-contact ul
+    {
+        width: 80%;
+        flex-direction: row;
+        padding: 0;
+        margin-top: 10px;
+    }
+    .other-contact ul li
+    {
+        width: 25px;
+    }
+
 }
